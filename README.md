@@ -1,10 +1,10 @@
 # YOLOv8 Human Pose Estimation 
 
-Welcome to the YOLOv8-Human-Pose-Estimation Repository! 🌟 This project is dedicated to improving the prediction of the pre-trained YOLOv8l-pose model from Ultralytics. Here, you'll find scripts specifically written to address and mitigate common challenges like reducing False Positives, filling gaps in Missing Detections across consecutive frames, and stabilizing Detections in dynamic environments 🚀🔍.
+Welcome to the YOLOv8-Human-Pose-Estimation Repository!  This project is dedicated to improving the prediction of the pre-trained YOLOv8l-pose model from Ultralytics. Here, you'll find scripts specifically written to address and mitigate common challenges like reducing False Positives, filling gaps in Missing Detections across consecutive frames, and stabilizing Detections in dynamic environments 🚀🔍.
 
-## Installation 🛠️
+## Installation 
 
-### Option 1: Using pip or make 📦
+### Option 1: Using pip or make 
 
 ```bash
 pip install -r requirements.txt
@@ -14,9 +14,9 @@ pip install -r requirements.txt
 make install
 ```
 
-## Usage 🖥️
+## Usage 
 
-### 1. `pose_predict.py` 🤖
+### 1. `pose_predict.py` 
 
 - **Description**: Perform standard pose prediction with object tracking and Re-Identification using pre-trained YOLOv8 models.
 - **Use Case**: Use this script to fine-tune the confidence threshold of pose detection for various input sources, including videos, images, or even real-time webcam feeds.
@@ -32,7 +32,7 @@ python pose_predict.py --model yolov8l-pose.pt --source folder_name --save-img #
 
 ```
 
-### 2. `pose_valid.py` 📊
+### 2. `pose_valid.py` 
 
 - **Description**: Automates the evaluation of the YOLOv8 pose model across multiple confidence thresholds to determine the most effective setting.
 
@@ -47,7 +47,7 @@ python pose_predict.py --model yolov8l-pose.pt --source folder_name --save-img #
   python pose_valid.py --model_file yolov8l-pose.yaml --weights yolov8l-pose.pt --dataset coco8-pose.yaml
   ```
 
-### 3. `pose_fusion_predict.py` 🔮
+### 3. `pose_fusion_predict.py` 
 
 - **Description**: Combines object tracking with an auxiliary segmentation network to enhance pose estimation results from the YOLOv8 model.
 
@@ -60,7 +60,7 @@ python pose_predict.py --model yolov8l-pose.pt --source folder_name --save-img #
   python pose_fusion_predict.py --pose_model yolov8l-pose.pt --seg_model yolov8l-seg.pt --source video.mp4 --is_video --save-img --view-img
   ```
 
-### 4. `pose_custom_data_train.py` 🏋️‍♂️
+### 4. `pose_custom_data_train.py` 🏋
 
 - **Description**: Fine-tune the YOLOv8 pose detection model on a custom dataset. This process involves retraining the pre-trained model with data that's more specific to the task, enhancing model specificity and accuracy.
 
@@ -73,7 +73,7 @@ python pose_predict.py --model yolov8l-pose.pt --source folder_name --save-img #
   python pose_custom_data_train.py --model_file yolov8l-pose.yaml --weights yolov8l-pose.pt --dataset your_custom_dataset.yaml
   ```
 
-### 5. `pose_custom_data_tune.py` 🔧
+### 5. `pose_custom_data_tune.py` 
 
 - **Description**: hyperparameter tuning of the YOLOv8 pose detection model using custom datasets. This script can help refines the model by adjusting specific parameters to align closely with the unique features of the data.
 
