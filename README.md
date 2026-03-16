@@ -1,4 +1,4 @@
-# YOLOv8-Human-Pose-Estimation 📚
+# YOLOv8 Human Pose Estimation 
 
 Welcome to the YOLOv8-Human-Pose-Estimation Repository! 🌟 This project is dedicated to improving the prediction of the pre-trained YOLOv8l-pose model from Ultralytics. Here, you'll find scripts specifically written to address and mitigate common challenges like reducing False Positives, filling gaps in Missing Detections across consecutive frames, and stabilizing Detections in dynamic environments 🚀🔍.
 
